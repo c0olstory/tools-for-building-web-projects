@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- <link rel="stylesheet" href="./css/style.css"> -->
+</head>
+<body>
+   <div>
+      <h3 id="datecalc_block">Калькулятор дат</h3>
+      <form id="datecalc" style="display: none">
+         <label>
+             <strong>Первая дата:</strong>
+             <input type="date" name="firstDate" />
+         </label>
+         <label>
+             <strong>Вторая дата:</strong>
+             <input type="date" name="secondDate" />
+         </label>
+         <button type="submit">Расчитать промежуток</button>
+         <p id="datecalc__result"></p>
+     </form>
+   </div>
+   
+   <div>
+      <h3 id="timer_block">Таймер</h3>
+      <form id="timer" style="display: none">         
+         <label>
+            Введите время в секундах:
+            <input type="number" id="countdownTime" name="userTime">
+         </label>
+         <button id="start" type="submit">Старт</button>
+         <button style="display: none" id="pause">Пауза</button>
+         <button style="display: none" id="reset">Сбросить таймер</button>
+         <p id="timer__result"></p>
+      </form>
+   </div>
+  
+
+   <script type="module" src="js/main.js"></script>
+   <script nomodule> alert("Ваш браузер не поддерживается =("); </script>
+</body>
+</html>
